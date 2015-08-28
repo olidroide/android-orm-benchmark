@@ -16,6 +16,7 @@ import com.littleinc.orm_benchmark.BenchmarkExecutable.Task;
 import com.littleinc.orm_benchmark.dbflow.DBFlowExecutor;
 import com.littleinc.orm_benchmark.greendao.GreenDaoExecutor;
 import com.littleinc.orm_benchmark.ormlite.ORMLiteExecutor;
+import com.littleinc.orm_benchmark.realm.RealmExecutor;
 import com.littleinc.orm_benchmark.sqlite.SQLiteExecutor;
 import com.littleinc.orm_benchmark.util.Util;
 import java.sql.SQLException;
@@ -44,7 +45,8 @@ public class MainActivity extends FragmentActivity {
   private BenchmarkExecutable[] mOrms = new BenchmarkExecutable[] {
       SQLiteExecutor.INSTANCE,
       //            SQLiteExecutorFast.INSTANCE,
-      ORMLiteExecutor.INSTANCE, GreenDaoExecutor.INSTANCE, DBFlowExecutor.INSTANCE
+      ORMLiteExecutor.INSTANCE, GreenDaoExecutor.INSTANCE, DBFlowExecutor.INSTANCE,
+      RealmExecutor.INSTANCE
   };
 
   //    private BenchmarkExecutable[] mOrms = new BenchmarkExecutable[] {SQLiteExecutor.INSTANCE, GreenDaoExecutor.INSTANCE};

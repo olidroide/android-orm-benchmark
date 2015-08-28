@@ -21,12 +21,19 @@ android {
 
 dependencies {
   compile 'com.android.support:support-v4:23.0.0'
+
+  //ORMLite
   compile 'com.j256.ormlite:ormlite-android:4.48'
 
+  //GreenRobot
   compile 'de.greenrobot:greendao:2.0.0'
   compile 'de.greenrobot:greendao-generator:2.0.0'
 
+  //DBFlow
   apt 'com.raizlabs.android:DBFlow-Compiler:2.2.1'
-  compile "com.raizlabs.android:DBFlow-Core:2.2.1"
-  compile "com.raizlabs.android:DBFlow:2.2.1"
+  compile 'com.raizlabs.android:DBFlow-Core:2.2.1'
+  compile 'com.raizlabs.android:DBFlow:2.2.1'
+
+  //REALM
+  compile 'io.realm:realm-android:0.82.1'
 }
